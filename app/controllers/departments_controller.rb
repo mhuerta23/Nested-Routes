@@ -21,6 +21,7 @@ class DepartmentsController < ApplicationController
 
   # GET /departments/1/edit
   def edit
+    @organization = Organization.find(params[:organization_id])
   end
 
   # POST /departments
