@@ -7,8 +7,8 @@
 
 <p>
   <strong>Organization:</strong>
-  <%= @department.organization %>
+  <%= @department.organization.name %>
 </p>
 
-<%= link_to 'Edit', edit_department_path(@department) %> |
-<%= link_to 'Back', departments_path %>
+<%= link_to 'Edit', edit_organization_department_path(@organization, @department) %> |
+<%= link_to 'Back', organization_path(@organization) %>
